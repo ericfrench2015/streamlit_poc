@@ -11,9 +11,9 @@ import pandas as pd
 
 def display_map(location_data):
     fig = px.scatter_mapbox(location_data, lat='latitude', lon='longitude')
-    fig.update_layout(mapbox_style='carto-darkmatter')
-    #fig.update_layout(mapbox_style='mapbox://styles/go-ifrc/ckrfe16ru4c8718phmckdfjh0')
-    #fig.update_mapboxes(accesstoken=st.secrets.mapbox_access_token)
+    #fig.update_layout(mapbox_style='carto-darkmatter')
+    fig.update_layout(mapbox_style='mapbox://styles/go-ifrc/ckrfe16ru4c8718phmckdfjh0')
+    fig.update_mapboxes(accesstoken=st.secrets.mapbox_access_token)
 
 
 
